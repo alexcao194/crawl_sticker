@@ -44,7 +44,7 @@ async function main () {
     try {
         const page = await init();
         const list = ["happy", "sad", "angry", "love", "funny", "cute", "confused", "excited", "scared", "shocked", "cat", "dog", "person", "bird", "ship", "car", "game", "movie", "music", "food", "drink", "sport", "animal", "nature", "city", "building", "sky", "sea", "beach", "mountain", "forest", "desert", "space", "moon", "sun", "star", "cloud", "rain", "snow", "storm", "wind", "fire", "earth", "water", "air", "light", "dark", "color", "shape", "line", "dot", "circle", "square", "triangle", "rectangle", "oval", "heart", "star", "moon", "sun", "flower", "tree", "leaf", "grass", "fruit", "vegetable", "animal", "bird", "fish", "insect", "reptile", "mammal", "amphibian", "human", "baby", "child", "adult", "old"];
-        for (let i = 0; i < list.length; i++) {
+        for (let i = 0; i < list.length && i < 10; i++) {
             await get(list[i], page);
         }
         console.log("All data fetched successfully");
